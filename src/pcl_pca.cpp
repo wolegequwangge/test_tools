@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
     size_t cloud_size = cloud_in->size();
     std::cout << "cloud_in's size is: " << cloud_size << std::endl;
 
-    int x_arg(0),y_arg(0),z_arg(0);
+    double x_arg(0),y_arg(0),z_arg(0);
 #pragma omp for
     for(size_t i = 0; i < cloud_size; i++) {
         x_arg+=cloud_in->points[i].x;
